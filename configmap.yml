@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myconfigmap
+data:
+  app.properties: |
+    WELCOME_MESSAGE=Hello from ConfigMap
+    LOG_LEVEL=debug
+  index.html: |
+    <html><body><h1>Version 1 - served from ConfigMap</h1></body></html>
